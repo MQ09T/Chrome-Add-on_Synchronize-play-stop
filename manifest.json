@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "同時視聴用ボタン",
+    "version": "1.0",
+    "description": "YouTubeとAmazon Primeを2窓する際、停止/再生を同期するボタン",
+    "action": {
+      "default_icon": "icon.png",
+      "default_title": "同時再生用ボタン"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://www.youtube.com/*",
+      "https://www.amazon.com/*",
+      "https://www.amazon.co.jp/*"
+    ]
+  }
+  
